@@ -1,0 +1,30 @@
+{
+    "strict": true,
+    "debug": true,
+    "sp": {
+        "entityId": "http://app.flask/swat",
+        "assertionConsumerService": {
+            "url": "http://localhost:8000/?acs",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+        },
+        "singleLogoutService": {
+            "url": "http://localhost:8000/?sls",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "NameIDFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+        "x509cert": "",
+        "privateKey": ""
+    },
+    "idp": {
+        "entityId": "https://sts.windows.net/724c9322-40b4-4983-8062-811993755e4e/",
+        "singleSignOnService": {
+            "url": "https://login.microsoftonline.com/724c9322-40b4-4983-8062-811993755e4e/saml2",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "singleLogoutService": {
+            "url": "https://login.microsoftonline.com/724c9322-40b4-4983-8062-811993755e4e/saml2",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "x509cert": "MIIC8DCCAdigAwIBAgIQb2btNjMBe5RDwIrqyOtTdDANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yMTA4MTIyMDEyMTBaFw0yNDA4MTIyMDEyMTBaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuaKO4218ayfA6xL+K8xY3mAf5vAPXSHnpA2WO20xcD3pY9nPGZf8lZpgtcu5kZd55I1zMEZXf7+qdHC/mkE/HtXLa+BeYMk7Smgld0FuyLb3r1KsXrgHSkS+xojtDeraTduJjIrBuZiB8eLHkblkR7+zfoGgouOD9vYE43CxA+YgOlbs0aJXXRQqvUNTNC3vsim9FMF1/o3TNXK3aznfh2CfsybZ8pfRUk7diqWWI2ZwRHpQ5cRo4RPmTDTSf68vilX+LfEuu06Tqaa0Xm/jGp8J9KF1nPIfAHfc31ns2Dwu0HP6kNhR7EL/WD4b7W+9eoHGUI67Axfe+r8in7qESQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQAo8CDqb+dmlQrDhvEj+ni5nX1vZisPqYIoG2LOHYXsPBduEfn1n6DaD6SYRcJ1pG7Jk9WxG/WV6Il6owPvDVO/JXSRkTJ6Nm0usJCgqON0+W2zRLyqM6N4whGM8rv87PfcFQbj/0O0uCNnRENNMT1UrlzGTXLwg6kvBT/zG0M+8w/yRvszO6cZU/hDzSYR09/uorqxXwoeAU8H8+0hqCt+P7YUFiYXUKK64WlWLUzZWYuEaqZzXwPP4DYHCg0HGiKWy+9lwHI9H0euKtwMbAC3v0BGVJ5UO837t8GsCq/i4YcAHYAMxUKJrClqQvx4bG9fnUlsAbw9pxyyzwLz7Rsn"
+    }
+}

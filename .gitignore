@@ -1,0 +1,10 @@
+.DS_Store
+venv
+.flaskenv
+*.code-workspace
+.vscode
+!**/__pycache__/
+__pycache__/
+db/app.db
+logs
+saml/certs/metadata.cer
