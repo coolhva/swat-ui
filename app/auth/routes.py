@@ -1,7 +1,6 @@
 from app.auth import bp
 from app.models import SAMLsettings
-from flask import (request, render_template, redirect, session,
-                   make_response, current_app)
+from flask import (request, render_template, redirect, session, make_response)
 from urllib.parse import urlparse
 
 from onelogin.saml2.auth import OneLogin_Saml2_Auth
