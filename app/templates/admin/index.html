@@ -1,0 +1,15 @@
+{% extends "admin/base.html" %}
+{% import 'bootstrap/form.html' as wtf %}
+
+{% block app_content %}
+<h1>Admin portal</h1>
+
+{% if not session['isAdmin'] %}
+<div class="row">
+    <div class="col-md-6">
+        {{ wtf.render_form(form, form_type="horizontal") }}
+    </div>
+</div>
+{% endif %}
+
+{% endblock %}
